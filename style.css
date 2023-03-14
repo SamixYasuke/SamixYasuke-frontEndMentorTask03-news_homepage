@@ -4,6 +4,8 @@
         justify-content: space-between;
     }
 
+  
+
     .nav-mobile{
         display: flex;
         flex-direction: row-reverse;
@@ -13,8 +15,8 @@
         right: -250px;
         width: 250px;
         height: 650px;
-        transition: all 0.4s cubic-bezier(0.41, 0.97, 0.73, -0.15);
-        background-color: rgb(255, 250, 250);
+        transition: all 0.4s ease-in-out;
+        background-color: white;
     }
 
     .nav-links ul{
@@ -50,6 +52,10 @@
         padding: 10px 30px 10px 30px;
     }
 
+    .readmore-btn:hover{
+        background-color: hsl(240, 100%, 5%);
+    }
+
     .bg-darkblue{
         background-color: hsl(240, 100%, 5%);
     }
@@ -62,7 +68,26 @@
     .col{
         color: white;
     }
+
+    .sec2-img{
+        width: 90px;
+    }
+
+    .text-darkblue{
+        color: hsl(240, 100%, 5%);
+    }
+
+    .gold-hov:hover{
+        color: hsl(35, 77%, 62%);
+        cursor: pointer;
+    }
+
+    .pink-hov:hover{
+        color: hsl(5, 85%, 63%)!important;
+        cursor: pointer;
+    }
 }
+
 
 
 @media (min-width: 601px) {
