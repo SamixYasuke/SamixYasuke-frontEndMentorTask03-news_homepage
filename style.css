@@ -14,7 +14,7 @@
         top: 0;
         right: -250px;
         width: 250px;
-        height: 650px;
+        height: 800px;
         transition: all 0.4s ease-in-out;
         background-color: white;
     }
@@ -86,12 +86,81 @@
         color: hsl(5, 85%, 63%)!important;
         cursor: pointer;
     }
+
+    .desktop-display{
+        display: none;
+    }
 }
 
 
 
 @media (min-width: 601px) {
-    body{
+    .mobile-display{
         display: none;
     }
+
+    .desktop-display header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+   
+
+   nav .nav-list-desk ul li{
+        list-style: none;
+        display: inline;
+        padding: 0 20px 0 20px; 
+   }
+
+   nav .nav-list-desk ul li a{
+    text-decoration: none;
+   }
+
+   nav .nav-list-desk ul li a:hover{
+    color: hsl(5, 85%, 63%);
+   }
+
+   
+
+   .readmore-btn-desktop{
+    text-decoration: none;
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    padding: 10px 30px 10px 30px;
+   }
+
+   .readmore-btn-desktop:hover{
+    background-color: hsl(240, 100%, 5%);
+   }
+
+   .readmore-div-desktop{
+    margin-top: 60px;
+   }
+
+   .bg-darkblue-desktop{
+    background-color: hsl(240, 100%, 5%);
+   }
+
+   .text-darkblue-desktop{
+    color: hsl(240, 100%, 5%);
+   }
+
+   .text-gold-desktop{
+    color:  hsl(35, 77%, 62%);
+   }
+
+   .text-gold-hover-desktop{
+    color: white;
+    cursor: pointer;
+   }
+
+   .text-gold-hover-desktop:hover{
+    color:  hsl(35, 77%, 62%);
+   }
+
+   
+
+   .text-grey-hover-desktop{
+    color: hsl(233, 8%, 79%);
+   }
 }
